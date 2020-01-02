@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * Created by seen on 2020/1/1.
  */
 public interface LimitRepository extends JpaRepository<LuckyMoney,Integer> {
-    void getAllByName();
+//    void getAllByName();
 }

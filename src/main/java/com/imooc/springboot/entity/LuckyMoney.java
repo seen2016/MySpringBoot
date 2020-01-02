@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 import java.math.BigDecimal;
 
 /**
@@ -15,6 +16,7 @@ public class LuckyMoney {
     @Id
     @GeneratedValue
     private Integer id;
+    @Min(message = "不能超过500",value =1)
     private BigDecimal money;
     private String producer;
     private String consumer;
